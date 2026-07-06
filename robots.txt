@@ -2,5 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap:
-https://fluid-thinker.github.io/fluid-thinker-docs/sitemap.xml
+Sitemap: https://fluid-thinker.github.io/fluid-thinker-docs/sitemap.xml
