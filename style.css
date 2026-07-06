@@ -1,0 +1,140 @@
+:root {
+    --primary_color: #004D40;
+    --secondary_color: #80CBC4;
+    --teritary_color: #FFB300;
+    --neutral_color: #FAFAF9;
+    --text_color: #000;
+    --padding-inline-web: 100px;
+    --padding-inline-mobile: 30px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Playfair", serif;
+}
+
+header {
+    background-color: var(--neutral_color);
+    padding-inline: var(--padding-inline-web);
+}
+
+main {
+    padding-top: 100px;
+    background-color: var(--neutral_color);
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-heading {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--primary_color);
+}
+
+.main-heading {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+}
+
+.custom-card.prime {
+    background-color: var(--primary_color);
+    color: var(--neutral_color);
+}
+
+.blur-effect {
+    width: 300px;
+    height: 300px;
+    background-color: var(--primary_color);
+    position: absolute;
+    border-radius: 100px;
+    z-index: 0;
+    filter: blur(300px);
+    left: -20px;
+    top: -350px;
+}
+
+.navbar-nav {
+    padding-left: 40px;
+}
+
+.navbar-nav .nav-item {
+    font-size: 18px;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.justify-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.text18 {
+    font-size: 20px;
+}
+
+.custom-section {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.custom-back {
+    background-color: var(--primary_color);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    color: var(--neutral_color);
+    font-size: 28px;
+}
+
+#about-text {
+    -webkit-columns: 300px 2;
+    -moz-columns: 300px 2;
+    columns: 300px 2;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#about-text p {
+    font-size: 18px;
+}
+
+@media (max-width: 998px) {
+    header {
+        padding-inline: var(--padding-inline-mobile);
+    }
+
+    .navbar-nav {
+        padding-left: 0px;
+    }
+
+    main {
+        padding-top: 70px;
+    }
+
+    .custom-card.prime{
+        height: 250px;
+    }
+}
